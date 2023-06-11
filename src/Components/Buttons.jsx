@@ -30,7 +30,7 @@ function Buttons() {
 
         <tr>
           <td>
-            <Button>Pi</Button>
+            <Button>&#x3C0;</Button>
           </td>
           <td>
             <Button>cos</Button>
@@ -48,7 +48,7 @@ function Buttons() {
             <Button>tan</Button>
           </td>
           <td>
-            <Button>sqrt</Button>
+            <Button>&#x221A;</Button>
           </td>
         </tr>
 
@@ -60,7 +60,9 @@ function Buttons() {
             <Button>EXP</Button>
           </td>
           <td>
-            <Button>xy</Button>
+            <Button>
+              x<sup>y</sup>
+            </Button>
           </td>
         </tr>
       </table>
@@ -92,7 +94,7 @@ function Buttons() {
             <Button>9</Button>
           </td>
           <td>
-            <Button>/</Button>
+            <Button>&#247;</Button>
           </td>
         </tr>
 
@@ -107,7 +109,7 @@ function Buttons() {
             <Button>6</Button>
           </td>
           <td>
-            <Button>*</Button>
+            <Button>&#215;</Button>
           </td>
         </tr>
 

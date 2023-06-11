@@ -136,7 +136,7 @@ function Buttons() {
             <Button>.</Button>
           </td>
           <td>
-            <Button>=</Button>
+            <button id="equals">=</button>
           </td>
           <td>
             <Button>+</Button>

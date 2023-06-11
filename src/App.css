@@ -1,0 +1,41 @@
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.values input {
+  margin-bottom: 20px;
+  width: 70%;
+  height: 72px;
+  font-size: 25px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  padding: 10px 14px 0 10px;
+  direction: RTL;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn {
+  line-height: 24px;
+  width: 70px;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  background: #dadce0;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 10px;
+}

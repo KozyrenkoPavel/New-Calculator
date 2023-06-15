@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Buttons from './Buttons';
 import Input from './Input';
-import Button from './Button';
 import HistoryWindow from './HistoryWindow';
 
 function Calculator() {

@@ -1,7 +1,14 @@
 function Button(props) {
   return (
     <>
-      <button className="btn">{props.children}</button>
+      <button
+        className="btn"
+        name="btn"
+        onClick={props.changeOutput}
+        value={props.value}
+      >
+        {props.children}
+      </button>
     </>
   );
 }

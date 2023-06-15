@@ -1,7 +1,13 @@
-function Input() {
+function Input(props) {
   return (
     <div className="values">
-      <input type="text" />
+      <input
+        type="text"
+        value={props.output}
+        onChange={props.changeOutput}
+        readOnly
+        placeholder="0"
+      />
     </div>
   );
 }

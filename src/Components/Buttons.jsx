@@ -1,147 +1,203 @@
 import Button from './Button';
 
-function Buttons() {
+function Buttons(props) {
+  const specialСharacters = {
+    PI: '&#x3C0;',
+    Sqrt: '&#x221A;',
+    division: '&#247;',
+    multiplication: '&#215;',
+  };
+
   return (
     <div className="buttons">
       <table className="buttons__btn-one">
-        <tr>
-          <td>
-            <Button>Rad</Button>
-          </td>
-          <td>
-            <Button>Deg</Button>
-          </td>
-          <td>
-            <Button>x!</Button>
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>
+              <Button changeOutput={props.changeOutput} value="Sin">
+                Sin
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="Ln">
+                Ln
+              </Button>
+            </td>
 
-        <tr>
-          <td>
-            <Button>inv</Button>
-          </td>
-          <td>
-            <Button>sin</Button>
-          </td>
-          <td>
-            <Button>ln</Button>
-          </td>
-        </tr>
+            <td>
+              <Button changeOutput={props.changeOutput} value="EXP">
+                EXP
+              </Button>
+            </td>
+          </tr>
 
-        <tr>
-          <td>
-            <Button>&#x3C0;</Button>
-          </td>
-          <td>
-            <Button>cos</Button>
-          </td>
-          <td>
-            <Button>log</Button>
-          </td>
-        </tr>
+          <tr>
+            <td>
+              <Button
+                changeOutput={props.changeOutput}
+                value={specialСharacters.PI}
+              >
+                &#x3C0;
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="Cos">
+                Cos
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="Log">
+                Log
+              </Button>
+            </td>
+          </tr>
 
-        <tr>
-          <td>
-            <Button>e</Button>
-          </td>
-          <td>
-            <Button>tan</Button>
-          </td>
-          <td>
-            <Button>&#x221A;</Button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <Button>Ans</Button>
-          </td>
-          <td>
-            <Button>EXP</Button>
-          </td>
-          <td>
-            <Button>
-              x<sup>y</sup>
-            </Button>
-          </td>
-        </tr>
+          <tr>
+            <td>
+              <Button changeOutput={props.changeOutput} value="e">
+                e
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="tan">
+                tan
+              </Button>
+            </td>
+            <td>
+              <Button
+                changeOutput={props.changeOutput}
+                value={specialСharacters.Sqrt}
+              >
+                &#x221A;
+              </Button>
+            </td>
+          </tr>
+        </tbody>
       </table>
 
       <table className="buttons__btn-two">
-        <tr>
-          <td>
-            <Button>(</Button>
-          </td>
-          <td>
-            <Button>)</Button>
-          </td>
-          <td>
-            <Button>%</Button>
-          </td>
-          <td>
-            <Button>CE</Button>
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>
+              <Button changeOutput={props.changeOutput} value="(">
+                (
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value=")">
+                )
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="%">
+                %
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="CE">
+                CE
+              </Button>
+            </td>
+          </tr>
 
-        <tr>
-          <td>
-            <Button>7</Button>
-          </td>
-          <td>
-            <Button>8</Button>
-          </td>
-          <td>
-            <Button>9</Button>
-          </td>
-          <td>
-            <Button>&#247;</Button>
-          </td>
-        </tr>
+          <tr>
+            <td>
+              <Button changeOutput={props.changeOutput} value="7">
+                7
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="8">
+                8
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="9">
+                9
+              </Button>
+            </td>
+            <td>
+              <Button
+                changeOutput={props.changeOutput}
+                value={specialСharacters.division}
+              >
+                &#247;
+              </Button>
+            </td>
+          </tr>
 
-        <tr>
-          <td>
-            <Button>4</Button>
-          </td>
-          <td>
-            <Button>5</Button>
-          </td>
-          <td>
-            <Button>6</Button>
-          </td>
-          <td>
-            <Button>&#215;</Button>
-          </td>
-        </tr>
+          <tr>
+            <td>
+              <Button changeOutput={props.changeOutput} value="4">
+                4
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="5">
+                5
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="6">
+                6
+              </Button>
+            </td>
+            <td>
+              <Button
+                changeOutput={props.changeOutput}
+                value={specialСharacters.multiplication}
+              >
+                &#215;
+              </Button>
+            </td>
+          </tr>
 
-        <tr>
-          <td>
-            <Button>1</Button>
-          </td>
-          <td>
-            <Button>2</Button>
-          </td>
-          <td>
-            <Button>3</Button>
-          </td>
-          <td>
-            <Button>-</Button>
-          </td>
-        </tr>
+          <tr>
+            <td>
+              <Button changeOutput={props.changeOutput} value="1">
+                1
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="2">
+                2
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="3">
+                3
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="-">
+                -
+              </Button>
+            </td>
+          </tr>
 
-        <tr>
-          <td>
-            <Button>0</Button>
-          </td>
-          <td>
-            <Button>.</Button>
-          </td>
-          <td>
-            <button id="equals">=</button>
-          </td>
-          <td>
-            <Button>+</Button>
-          </td>
-        </tr>
+          <tr>
+            <td>
+              <Button changeOutput={props.changeOutput} value="0">
+                0
+              </Button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value=".">
+                .
+              </Button>
+            </td>
+            <td>
+              <button id="equals" onClick={props.changeOutput} value="=">
+                =
+              </button>
+            </td>
+            <td>
+              <Button changeOutput={props.changeOutput} value="+">
+                +
+              </Button>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );

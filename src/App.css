@@ -3,6 +3,7 @@
   max-width: 800px;
   text-align: center;
   margin-top: 20px;
+  /* position: fixed; */
 }
 
 .values input {
@@ -13,7 +14,11 @@
   border: 1px solid #dadce0;
   border-radius: 8px;
   padding: 10px 14px 0 10px;
-  direction: RTL;
+  text-align: right;
+}
+
+.values input:focus {
+  outline: none !important;
 }
 
 .buttons {
@@ -45,4 +50,32 @@
 #equals {
   background: #4285f4;
   border: 1px solid #4285f4;
+}
+
+.hystmodal__btn {
+  margin-top: 200px;
+  width: 50px;
+  height: 25px;
+  position: relative;
+  left: 325px;
+  top: 47px;
+  background: none;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hystmodal__wrap {
+  background: #fff;
+  position: fixed;
+  top: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 5px;
+  padding: 10px;
 }
